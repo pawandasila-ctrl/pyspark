@@ -1,0 +1,66 @@
+# ========================
+# Spark / PySpark
+# ========================
+warehouse/          # Delta Lake tables, checkpoints — large binary data
+spark-ivy/          # Downloaded JARs (re-downloaded on demand)
+*.log
+*.out
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+.eggs/
+
+# ========================
+# Jupyter Notebooks
+# ========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ========================
+# Docker volumes & runtime
+# ========================
+# spark-ivy and warehouse already covered above
+
+# ========================
+# Kafka / Data files
+# ========================
+drivers.json        # empty placeholder file
+*.csv
+*.parquet
+*.json.gz
+
+# ========================
+# Python & Virtual Envs
+# ========================
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Secrets / Credentials
+# ========================
+.env
+*.pem
+*.key
+secrets.yaml
